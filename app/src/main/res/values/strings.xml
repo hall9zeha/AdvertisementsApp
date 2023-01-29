@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">BannersApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Ad Banners</string>
+    <string name="nav_header_subtitle">Tipos de anuncios con AdMob android</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="basic_banner_label">Basic Banners</string>
+    <string name="interstitial_banner_label">Interstitial Ad</string>
+    <string name="native_banner_label">Native Ad</string>
+    <string name="defaultBanner">Banner estándar</string>
+    <string name="smartBannerText">Banner inteligente</string>
+    <string name="adaptiveBannerText">Banner adaptativo</string>
+    <string name="basic_banners">Banners básicos</string>
+    <string name="interstitial_banner">Anuncio intersticial</string>
+    <string name="native_banner">Anuncio nativo</string>
+    <string name="delayBannerText">Espera 3 segundos por favor</string>
+    <string name="completingExec">ejecución completada</string>
+    <string name="showBanner">Lanzar anuncio</string>
+    <string name="loadingNativeText">Recyclerview con anuncios nativos incluidos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="adRewardedText">Al hacer click en el botón se lanzará el anuncio bonificado</string>
+    <string name="rewarded_ad">Anuncio recompensado</string>
+    <string name="watchAd">Ver anuncio</string>
+    <string name="rewardMessage">Anuncio completado, recompensa obtenida</string>
+    <string name="rewarded_ad_label">Rewarded Ad</string>
+</resources>

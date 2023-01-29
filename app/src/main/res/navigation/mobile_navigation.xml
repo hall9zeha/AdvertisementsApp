@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_basic_banner">
+
+    <fragment
+        android:id="@+id/nav_basic_banner"
+        android:name="com.barryzeha.bannersapp.ui.home.BasicBannersFragment"
+        android:label="@string/basic_banner_label"
+        tools:layout="@layout/fragment_basic_banners" />
+
+    <fragment
+        android:id="@+id/nav_intersticial_banner"
+        android:name="com.barryzeha.bannersapp.ui.gallery.InterstitialAdFragment"
+        android:label="@string/interstitial_banner_label"
+        tools:layout="@layout/fragment_intersticial_ad" />
+
+    <fragment
+        android:id="@+id/nav_native_banner"
+        android:name="com.barryzeha.bannersapp.ui.slideshow.NativeAdFragment"
+        android:label="@string/native_banner_label"
+        tools:layout="@layout/fragment_native_ad" />
+    <fragment
+        android:id="@+id/nav_reward_ad"
+        android:name="com.barryzeha.bannersapp.ui.RewardedAdFragment"
+        android:label="@string/rewarded_ad_label"
+        tools:layout="@layout/fragment_rewarded_ad" />
+</navigation>

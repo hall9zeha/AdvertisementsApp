@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mNativeAd">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/common_padding_min">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            tools:src="@drawable/ic_launcher_foreground"
+            android:id="@+id/ad_pp_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+        <TextView
+            android:id="@+id/ad_headline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Texto de publicidad"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/ad_pp_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/common_padding_min"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+        <TextView
+            android:id="@+id/ad_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="GranTítulo"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@id/ad_pp_icon"
+            app:layout_constraintTop_toBottomOf="@id/ad_headline"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/common_padding_min"
+            />
+        <TextView
+            android:id="@+id/ad_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="descripcion de la publicidad"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@id/ad_pp_icon"
+            app:layout_constraintTop_toBottomOf="@id/ad_pp_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/common_padding_micro"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ad_price"
+            tools:text="$28.00"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/ad_description"
+            app:layout_constraintEnd_toEndOf="@id/ad_description"
+            app:layout_constraintTop_toBottomOf="@id/ad_description"
+            />
+        <com.google.android.gms.ads.nativead.MediaView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/adMedia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ad_price"
+            android:layout_marginTop="@dimen/common_padding_micro"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ad_button"
+            tools:text="Ir al sitio"
+
+            app:layout_constraintTop_toBottomOf="@id/adMedia"
+            app:layout_constraintStart_toStartOf="@id/ad_pp_icon"
+            app:layout_constraintEnd_toEndOf="@id/ad_description"
+            android:layout_marginTop="@dimen/common_padding_default"
+            android:textSize="12sp"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.gms.ads.nativead.NativeAdView>
